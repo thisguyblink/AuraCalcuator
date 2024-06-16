@@ -21,7 +21,11 @@
     function reset() {
         if (window.confirm('Are you sure you want to reset your input?')) {
             out = 'score has been reset(0)';
+            for (let i = 0; i < checks.length; i +=1) {
+                checks[i] = false;
+            }
         }
+        location.reload();
     }
     function showPop() {
         dialog.showModal();
