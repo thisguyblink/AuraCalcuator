@@ -1,5 +1,5 @@
 <script>
-    const values = [74, -101, -523, 711, 780, -163, 127, -47, -588, -600, 87, -519, -211, 150, -512, 407, 237, -125, 870, 986, 93, 198, 505, -985, -444, 395, -121, 913, 83, -990, 255, -54, -145, 793, 448, -964, 264, -167, 509, 209, 981, 775, -813, 96, 838, -622, -217, 565, -394, 132];
+    const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -444, 395, -121, 913, 83, -990, 255, -54, -145, 793, 448, -964, 264, -167, 509, 209, 981, 775, -813, 96, 838, -622, -217, 565, -394, 132];
     let out = 'Cowabunga';
     let total = 0;
     let dialog;
@@ -46,92 +46,80 @@
 </div>
 <div class ="questionList">
     <form class="questionForm" method="POST" action="?/submission">
-        <!-- <input type="checkbox" id="q1" on:change={() => check[0] = !check[0]}>
-        <label for="q1">1. Rizzed up at least 1 person in the last week: {values[4]}</label>
-        <br>
-        <input type="checkbox" id="q2" value="1">
-        <label for="q2">1. Rizzed up at least 1 person in the last week: {values[4]}</label>
-        <br>
-        <input type="checkbox" id="q3" value="2">
-        <label for="q3">1. Rizzed up at least 1 person in the last week: {values[4]}</label>
-        <br>
-        <input type="checkbox" id="q4" value="3">
-        <label for="q4">1. Rizzed up at least 1 person in the last week: {values[4]}</label>
-         -->
          <input type="checkbox" id="q0" on:change={() => checks[0] = !checks[0]}>
-         <label for="q0">1. Have you ever traveled outside your country?</label>
+         <label for="q0">1. Tripped on something in the past week?</label>
          <br>
          <input type="checkbox" id="q1" on:change={() => checks[1] = !checks[1]} checked={checks[1]}>
-         <label for="q1">2. Do you prefer coffee or tea?</label>
+         <label for="q1">2. Rizzed up a person in the past week?</label>
          <br>
          <input type="checkbox" id="q2" on:change={() => checks[2] = !checks[2]} checked={checks[2]}>
-         <label for="q2">3. Do you enjoy reading books?</label>
+         <label for="q2">3. Jaywalked but didn't have to run across?</label>
          <br>
          <input type="checkbox" id="q3" on:change={() => checks[3] = !checks[3]} checked={checks[3]}>
-         <label for="q3">4. Have you ever attended a concert?</label>
+         <label for="q3">4. Stuttered in the past day?</label>
          <br>
          <input type="checkbox" id="q4" on:change={() => checks[4] = !checks[4]} checked={checks[4]}>
-         <label for="q4">5. Do you have any pets?</label>
+         <label for="q4">5. Threw up?</label>
          <br>
          <input type="checkbox" id="q5" on:change={() => checks[5] = !checks[5]} checked={checks[5]}>
-         <label for="q5">6. Do you like to cook?</label>
+         <label for="q5">6. Dropped something?</label>
          <br>
          <input type="checkbox" id="q6" on:change={() => checks[6] = !checks[6]} checked={checks[6]}>
-         <label for="q6">7. Have you ever gone camping?</label>
+         <label for="q6">7. Sneezed more than 3 times in a row?</label>
          <br>
          <input type="checkbox" id="q7" on:change={() => checks[7] = !checks[7]} checked={checks[7]}>
-         <label for="q7">8. Do you play any musical instruments?</label>
+         <label for="q7">8. Got lower than a 50% on a test after the curve?</label>
          <br>
          <input type="checkbox" id="q8" on:change={() => checks[8] = !checks[8]} checked={checks[8]}>
-         <label for="q8">9. Have you ever tried skydiving?</label>
+         <label for="q8">9. Dropped something but caught it before it hit the ground?</label>
          <br>
          <input type="checkbox" id="q9" on:change={() => checks[9] = !checks[9]} checked={checks[9]}>
-         <label for="q9">10. Do you enjoy watching movies?</label>
+         <label for="q9">10. Got something for free?</label>
          <br>
          <input type="checkbox" id="q10" on:change={() => checks[10] = !checks[10]} checked={checks[10]}>
-         <label for="q10">11. Have you ever run a marathon?</label>
+         <label for="q10">11. Sports team won a championship, not including the celtics?</label>
          <br>
          <input type="checkbox" id="q11" on:change={() => checks[11] = !checks[11]} checked={checks[11]}>
-         <label for="q11">12. Do you speak more than one language?</label>
+         <label for="q11">12. Sports team lost in the chmpionship?</label>
          <br>
          <input type="checkbox" id="q12" on:change={() => checks[12] = !checks[12]} checked={checks[12]}>
-         <label for="q12">13. Do you prefer cats or dogs?</label>
+         <label for="q12">13. BAC above .1 in the last month?</label>
          <br>
          <input type="checkbox" id="q13" on:change={() => checks[13] = !checks[13]} checked={checks[13]}>
-         <label for="q13">14. Have you ever been to a beach?</label>
+         <label for="q13">14. Almost died but didn't?</label>
          <br>
          <input type="checkbox" id="q14" on:change={() => checks[14] = !checks[14]} checked={checks[14]}>
-         <label for="q14">15. Do you enjoy playing video games?</label>
+         <label for="q14">15. Won an award?</label>
          <br>
          <input type="checkbox" id="q15" on:change={() => checks[15] = !checks[15]} checked={checks[15]}>
-         <label for="q15">16. Have you ever volunteered for a charity?</label>
+         <label for="q15">16. Volunteered or donated to charity?</label>
          <br>
          <input type="checkbox" id="q16" on:change={() => checks[16] = !checks[16]} checked={checks[16]}>
-         <label for="q16">17. Do you like spicy food?</label>
+         <label for="q16">17. Got rejected, for anything?</label>
          <br>
          <input type="checkbox" id="q17" on:change={() => checks[17] = !checks[17]} checked={checks[17]}>
-         <label for="q17">18. Have you ever been to a theme park?</label>
+         <label for="q17">18. Had a bad picture taken of you?</label>
          <br>
          <input type="checkbox" id="q18" on:change={() => checks[18] = !checks[18]} checked={checks[18]}>
-         <label for="q18">19. Do you enjoy gardening?</label>
+         <label for="q18">19. Friend took a good candid picture?</label>
          <br>
          <input type="checkbox" id="q19" on:change={() => checks[19] = !checks[19]} checked={checks[19]}>
-         <label for="q19">20. Have you ever gone skiing or snowboarding?</label>
+         <label for="q19">20. Brunt something while cooking, literally or figureatively?</label>
          <br>
          <input type="checkbox" id="q20" on:change={() => checks[20] = !checks[20]} checked={checks[20]}>
-         <label for="q20">21. Do you like to draw or paint?</label>
+         <label for="q20">21. Mispelt a word?</label>
          <br>
          <input type="checkbox" id="q21" on:change={() => checks[21] = !checks[21]} checked={checks[21]}>
-         <label for="q21">22. Have you ever attended a sports event?</label>
+         <label for="q21">22. Got a paycheck this week?</label>
          <br>
          <input type="checkbox" id="q22" on:change={() => checks[22] = !checks[22]} checked={checks[22]}>
-         <label for="q22">23. Do you enjoy hiking?</label>
+         <label for="q22">23. Watched a GOOD movie, iykyk!?!?</label>
          <br>
          <input type="checkbox" id="q23" on:change={() => checks[23] = !checks[23]} checked={checks[23]}>
-         <label for="q23">24. Have you ever tried sushi?</label>
+         <label for="q23">24. Finished a project, and it works?</label>
          <br>
          <input type="checkbox" id="q24" on:change={() => checks[24] = !checks[24]} checked={checks[24]}>
-         <label for="q24">25. Do you like roller coasters?</label>
+         <label for="q24">25. Sold your soul #sellout?</label>
          <br>
         <br>
         <div class="buttons">
@@ -172,7 +160,7 @@
     
 <style>
     .questionForm {
-        background-color: aqua;
+        background-color: white;
     }
     .header {
         padding-top: 3rem;
