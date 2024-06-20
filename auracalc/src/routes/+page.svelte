@@ -133,10 +133,10 @@
          <input type="checkbox" id="q24" on:change={() => checks[24] = !checks[24]} checked={checks[24]}>
          <label for="q24">25. Do you like roller coasters?</label>
          <br>
-         
         <br>
         <button type="button" id="submit" on:click={() => {
            handleSubmit();
+           showPop();
         }}>Submit</button>
         <button type="button" id="reset" on:click={() => {
             reset();
@@ -162,9 +162,6 @@
                 }}>Share</button>
         </dialog>
     </div>
-    <button type="button" on:click={() => {
-        showPop();
-        }}>Results</button>
 </div>
     
 <style>
