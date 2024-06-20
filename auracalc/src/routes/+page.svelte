@@ -134,37 +134,46 @@
          <label for="q24">25. Do you like roller coasters?</label>
          <br>
         <br>
-        <button type="button" id="submit" on:click={() => {
-           handleSubmit();
-           showPop();
-        }}>Submit</button>
-        <button type="button" id="reset" on:click={() => {
-            reset();
-         }}>Reset</button>
+        <div class="buttons">
+            <button type="button" id="submit" on:click={() => {
+                handleSubmit();
+                showPop();
+            }}>Submit</button>
+            <br>
+            <button type="button" id="reset" on:click={() => {
+                reset();
+            }}>Reset</button>
+        </div>
     </form>
     <p id="output">Your score is {total}</p>
     <div class = "results">
         <dialog id="dresult" bind:this={dialog}>
-            {#if total > 0}
-                <img alt="No found" src={alpha} />
+            <button type="button" id="exit" on:click={() => {
+                closePop();
+            }}>X</button>
+            <br>
+            <div class="popup">
+                {#if total > 0}
+                <img alt="No found" id="alpha" src={alpha} />
                 <p>YOUR AURA IS {total}</p>
                 <p>Congratualions you are offically a SIGMA</p>
-            {:else}
-            <img alt="No found" src={beta} />
+                {:else}
+                <img alt="No found" id="beta" src={beta} />
                 <p>YOUR AURA IS {total}</p>
                 <p>You are not a sigma, you are a beta ... </p>
-            {/if}
-            <button type="button" on:click={() => {
-                closePop();
-            }}>Exit</button>
-             <button type="button" on:click={() => {
-                 share();
+                {/if}
+                <button type="button" on:click={() => {
+                    share();
                 }}>Share</button>
+            </div>
         </dialog>
     </div>
 </div>
     
 <style>
+    .questionForm {
+        background-color: aqua;
+    }
     .header {
         padding-top: 3rem;
         display: flex;
@@ -178,6 +187,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        font-size: 1.25rem;
     }
     #submit {
         background-color: green;
@@ -185,9 +195,40 @@
     }
     #output {
         border: 3px solid purple;
-        height: 15rem;
-        width: 15rem;
+        height: 5rem;
+        width: 10rem;
         background-color: beige;
+        align-self: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+    #alpha {
+        height: 30rem;
+        width: auto;
+    }
+    #beta {
+        height: 10rem;
+        width: auto;
+    }
+    #exit {
+        position: relative;
+        left: 90%;
+        justify-content: end;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    .popup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: 50%;
     }
 
 </style>
