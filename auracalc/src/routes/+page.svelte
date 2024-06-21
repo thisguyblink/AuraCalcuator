@@ -40,7 +40,7 @@
 </script>
 
 <div class = header>
-    <h1>Aura Calcualator</h1>
+    <h1>Aura Calculator</h1>
     <h3>Take it if you dare!</h3>
     <h3>Are you a SIGMA or beta...</h3>
 </div>
@@ -80,7 +80,7 @@
          <label for="q10">11. Sports team won a championship, not including the celtics?</label>
          <br>
          <input type="checkbox" id="q11" on:change={() => checks[11] = !checks[11]} checked={checks[11]}>
-         <label for="q11">12. Sports team lost in the chmpionship?</label>
+         <label for="q11">12. Sports team lost in the championship?</label>
          <br>
          <input type="checkbox" id="q12" on:change={() => checks[12] = !checks[12]} checked={checks[12]}>
          <label for="q12">13. BAC above .1 in the last month?</label>
@@ -104,7 +104,7 @@
          <label for="q18">19. Friend took a good candid picture?</label>
          <br>
          <input type="checkbox" id="q19" on:change={() => checks[19] = !checks[19]} checked={checks[19]}>
-         <label for="q19">20. Brunt something while cooking, literally or figureatively?</label>
+         <label for="q19">20. Burnt something while cooking, literally or figureatively?</label>
          <br>
          <input type="checkbox" id="q20" on:change={() => checks[20] = !checks[20]} checked={checks[20]}>
          <label for="q20">21. Mispelt a word?</label>
@@ -157,10 +157,9 @@
         </dialog>
     </div>
 </div>
-    
 <style>
     .questionForm {
-        background-color: white;
+        background-color: #CCCCDD;
     }
     .header {
         padding-top: 3rem;
@@ -169,17 +168,29 @@
         align-items: center;
         flex-direction: column;
     }
+    h1{
+        color: white;
+        font-family: 'Limelight' cursive;
+
+    }
     .questionList {
         padding-top: 3rem;
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin-left: 20px;
+        /*align-items: center;*/
         flex-direction: column;
         font-size: 1.25rem;
+        font-family: 'Inria Serif', serif;
+    }
+    h3{
+        font-family: 'Jeju Hallasan', sans-serif;
     }
     #submit {
-        background-color: green;
-        color: blue
+        background-color: rgb(172, 98, 233);
+        border-color: azure;
+        color: white;
+        font-size: medium;
     }
     #output {
         border: 3px solid purple;
@@ -220,4 +231,3 @@
     }
 
 </style>
-
