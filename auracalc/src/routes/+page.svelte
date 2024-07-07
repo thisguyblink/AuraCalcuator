@@ -1,15 +1,15 @@
 <script>
-    const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -444, 395, -121, 913, 83, -990, 255, -54, -145, 793, 448, -964, 264, -167, 509, 209, 981, 775, -813, 96, 838, -622, -217, 565, -394, 132];
+    const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -200, 50, -150, 300, 2000, 200, -300, 325, 5000, 1, -2000, 800];
     let out = 'Cowabunga';
     let total = 0;
     let dialog;
-    let val;
     let checks = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
     import alpha from '$lib/assets/alpha wolf.jpeg';
     import beta from '$lib/assets/beta wolf.gif'
 
     function handleSubmit() {
         out = values[0];
+        total = 0;
         for (let i = 0; i < checks.length; i +=1) {
             if (checks[i]) {
                 total += values[i];
@@ -25,7 +25,8 @@
                 checks[i] = false;
             }
         }
-        location.reload();
+        total = 0;
+        // location.reload();
     }
     function showPop() {
         dialog.showModal();
@@ -128,8 +129,45 @@
          <label for="q23">24. Finished a project, and it works?</label>
          <br>
          <input type="checkbox" id="q24" on:change={() => checks[24] = !checks[24]} checked={checks[24]}>
-         <label for="q24">25. Sold your soul #sellout?</label>
+         <label for="q24">25. Sold your soul or moral for money #sellout?</label>
          <br>
+         <input type="checkbox" id="q25" on:change={() => checks[25] = !checks[25]} checked={checks[25]}>
+         <label for="q25">26. Broke something?</label>
+         <br>
+         <input type="checkbox" id="q26" on:change={() => checks[26] = !checks[26]} checked={checks[26]}>
+         <label for="q26">27. Cried?</label>
+         <br>
+         <input type="checkbox" id="q27" on:change={() => checks[27] = !checks[27]} checked={checks[27]}>
+         <label for="q27">28. Cried because of anouther person?</label>
+         <br>
+         <input type="checkbox" id="q28" on:change={() => checks[28] = !checks[28]} checked={checks[28]}>
+         <label for="q28">29. Receive a compliment?</label>
+         <br>
+         <input type="checkbox" id="q29" on:change={() => checks[29] = !checks[29]} checked={checks[29]}>
+         <label for="q29">30. Your crush complimented you?</label>
+         <br>
+         <input type="checkbox" id="q30" on:change={() => checks[30] = !checks[30]} checked={checks[30]}>
+         <label for="q30">31. Got on the jumbotron at a sports game?</label>
+         <br>
+         <input type="checkbox" id="q31" on:change={() => checks[31] = !checks[31]} checked={checks[31]}>
+         <label for="q31">32. Lost a bet?</label>
+         <br>
+         <input type="checkbox" id="q32" on:change={() => checks[32] = !checks[32]} checked={checks[32]}>
+         <label for="q32">33. Won a bet?</label>
+         <br>
+         <input type="checkbox" id="q33" on:change={() => checks[33] = !checks[33]} checked={checks[33]}>
+         <label for="q33">34. Listen to MF DOOM?</label>
+         <br>
+         <input type="checkbox" id="q34" on:change={() => checks[34] = !checks[34]} checked={checks[34]}>
+         <label for="q34">35. Swiftie?</label>
+         <br>
+         <input type="checkbox" id="q35" on:change={() => checks[35] = !checks[35]} checked={checks[35]}>
+         <label for="q35">36. Likes pineapple on Pizza?(Disgusting)</label>
+         <br>
+         <input type="checkbox" id="q36" on:change={() => checks[36] = !checks[36]} checked={checks[36]}>
+         <label for="q36">37. Clutch up in any game?</label>
+         <br>
+
         <br>
         <div class="buttons">
             <button type="button" id="submit" on:click={() => {
