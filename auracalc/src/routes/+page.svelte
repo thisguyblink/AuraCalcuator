@@ -1,11 +1,11 @@
 <script>
+    import alpha from '$lib/assets/alpha wolf.jpeg';
+    import beta from '$lib/assets/beta wolf.gif'
     const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -200, 50, -150, 300, 2000, 200, -300, 325, 5000, 1, -2000, 800];
     let out = 'Cowabunga';
     let total = 0;
     let dialog;
     let checks = [false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false, false];
-    import alpha from '$lib/assets/alpha wolf.jpeg';
-    import beta from '$lib/assets/beta wolf.gif'
 
     function handleSubmit() {
         out = values[0];
@@ -26,7 +26,6 @@
             }
         }
         total = 0;
-        // location.reload();
     }
     function showPop() {
         dialog.showModal();
@@ -48,11 +47,11 @@
     }
     
 </script>
-
-<div class = header>
+<body>
+<div class = "header">
     <h1>Aura Calculator</h1>
-    <h3>Take it if you dare!</h3>
-    <h3>Are you a SIGMA or beta...</h3>
+    <h3>Government Sanctioned Aura Testing</h3>
+    <h3>Sigma and Beta Testing Included</h3>
 </div>
 <div class ="questionList">
     <form class="questionForm" method="POST" action="?/submission">
@@ -204,6 +203,7 @@
         </dialog>
     </div>
 </div>
+</body>
 <style>
     .questionForm {
         background-color: #CCCCDD;
@@ -214,24 +214,18 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
-    h1{
-        color: white;
-        font-family: 'Limelight' cursive;
-
+        font-weight: 900;
+        font-size: 1.25rem;
     }
     .questionList {
         padding-top: 3rem;
+        padding-left: 3rem;
         display: flex;
         justify-content: center;
         margin-left: 20px;
-        /*align-items: center;*/
         flex-direction: column;
         font-size: 1.25rem;
-        font-family: 'Inria Serif', serif;
-    }
-    h3{
-        font-family: 'Jeju Hallasan', sans-serif;
+        font-weight: 300;
     }
     #submit {
         background-color: rgb(172, 98, 233);
@@ -275,6 +269,12 @@
         justify-content: center;
         align-items: center;
         left: 50%;
+    }
+
+    body {
+        font-family: "Public Sans", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
     }
 
 </style>
