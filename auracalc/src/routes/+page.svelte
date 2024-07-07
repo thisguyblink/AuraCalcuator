@@ -34,7 +34,16 @@
         dialog.close();
     }
     function share() {
-        window.confirm("Results have been copied to clipboard");
+        var output;
+        if (total > 0) {
+            output = "I am officially a SIGMA! I am proud to announce that my Aura is " + total + "\nSee if you're a Sigma too\n" + "aura.gmoneymoves.com";
+            navigator.clipboard.writeText(output);
+        }
+        else {
+            output = "I am not a sigma :( I regret to inform you that my aura is " + total + "\nHopefully you're not a beta too\n" + "aura.gmoneymoves.com";
+            navigator.clipboard.writeText(output);
+        }
+        window.confirm("Results have been copied to clipboard!");
     }
     
 </script>
