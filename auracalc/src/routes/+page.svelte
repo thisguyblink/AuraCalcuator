@@ -1,6 +1,7 @@
 <script>
     import alpha from '$lib/assets/alpha wolf.jpeg';
-    import beta from '$lib/assets/beta wolf.gif'
+    import beta from '$lib/assets/beta wolf.gif';
+    import infinite from '$lib/assets/infinite.png';
     const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -200, 50, -150, 300, 2000, 200, -300, 325, 5000, 1, -2000, 800];
     let out = 'Cowabunga';
     let total = 0;
@@ -48,86 +49,8 @@
     
 </script>
 <body>
-<div class="backgoundtext"> 
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
-    <h1 class = "back-text">GMM</h1>
+<div class="background">
+    
 </div>
 <div class = "header">
     <h1>Form AC-7:<br>Aura Calculator</h1>
@@ -287,24 +210,7 @@
 </div>
 </body>
 <style>
-    .backgoundtext {
-        position: absolute;
-        z-index: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        opacity: 2%;
-        font-weight: 900;
-        font-size: 2rem;
-        text-shadow: 1px 1px black, -1px -1px #444;  
-        max-height: 1rem;  
-    }
-    .back-text {
-        /* margin: 2rem; */
-        padding: .5rem;
-    }
     .header {
-        z-index: 2;
         padding-top: 2rem;
         display: flex;
         justify-content: center;
@@ -315,7 +221,6 @@
         text-align: center;
     }
     .questionList {
-        z-index: 5;
         padding-top: 3rem;
         padding-left: 3rem;
         display: flex;
