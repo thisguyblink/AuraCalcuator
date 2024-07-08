@@ -37,7 +37,7 @@
     function share() {
         var output;
         if (total > 0) {
-            output = "I am officially a SIGMA! I am proud to announce that my Aura is " + total + "\nSee if you're a Sigma too\n" + "aura.gmoneymoves.com";
+            output = "I am officially a SIGMA! I am proud to announce that my Aura is " + total + "!!!\nSee if you're a Sigma too\n" + "aura.gmoneymoves.com";
             navigator.clipboard.writeText(output);
         }
         else {
@@ -229,14 +229,14 @@
             <div class="popup">
                 {#if total > 0}
                 <img alt="No found" id="alpha" src={alpha} />
-                <p>YOUR AURA IS {total}</p>
-                <p>Congratualions you are offically a SIGMA</p>
+                <p class="aura">AURA: {total}</p>
+                <p class="aura">LEVEL: SIGMA</p>
                 {:else}
                 <img alt="No found" id="beta" src={beta} />
-                <p>YOUR AURA IS {total}</p>
-                <p>You are not a sigma, you are a beta ... </p>
+                <p class ="aura">AURA: {total}</p>
+                <p class="aura">level: beta </p>
                 {/if}
-                <button type="button" on:click={() => {
+                <button type="button" id="share" on:click={() => {
                     share();
                 }}>Share</button>
             </div>
@@ -310,12 +310,14 @@
         border-radius:  2rem;
     }
     #alpha {
-        height: 30rem;
+        height: 25rem;
         width: auto;
+        border-radius: 20px;
     }
     #beta {
         height: 10rem;
         width: auto;
+        border-radius: 7px;
     }
     #exit {
         position: relative;
@@ -323,12 +325,16 @@
         justify-content: end;
         margin-bottom: 1rem;
         font-size: 1.5rem;
+        border: 3px solid #1d3557;
+        border-radius: 5px;
+        background-color: #faedcd;
     }
     .popup {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        backdrop-filter: blur(3px);
     }
     .buttons {
         display: flex;
@@ -368,5 +374,25 @@
         text-align: center;
         align-items: center;
         justify-content: center;
+    }
+    #dresult {
+        border: 5px solid #1d3557;
+        border-radius: 15px;
+        background-color: #d4a373;
+    }
+    .aura {
+        margin: 1rem;
+        font-size: 3rem;
+        font-weight: 900;
+    }
+    #share {
+        font-size: 1.5rem;
+        font-weight: 300;
+        border: 3px solid #264653;
+        border-radius: 5px;
+        background-color: #faedcd;
+    }
+    .results {
+        backdrop-filter: blur(100px);
     }
 </style>
