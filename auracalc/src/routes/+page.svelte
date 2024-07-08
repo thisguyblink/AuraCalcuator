@@ -49,8 +49,11 @@
     
 </script>
 <body>
+    <div class="texture">
+        <img alt="No found" id="tape"src={tape}>
+    </div>
 <div class = "header">
-    <h1>Form AC-7:<br>Aura Calculator</h1>
+    <h1>Form AC-11:<br>Aura Calculator</h1>
     <h3 id = "gov">&#9888 Government Sanctioned Aura Testing &#9888</h3>
     <p class="description">This is a test designed to calculate your Aura based on your actions. If there isn't a time frame listed use best judgment.<br> Don't lie, we will know. We are watching. <br>Happy Testing, <br> G Money Moves Inc. </p>
 </div>
@@ -220,6 +223,9 @@
     </form>
     <p id="output">Your score is {total}</p>
     <p id="complaints">If you don't like your score, you can email betacompliants@gmoneymoves.com or DM @gmoneymoves</p>
+    <a id="github" href='https://github.com/thisguyblink/AuraCalcuator'>
+        <p>Project is Now Finished<br> Github Repo found here!</p>
+    </a>
     <div class = "results">
         <dialog id="dresult" bind:this={dialog}>
             <button type="button" id="exit" on:click={() => {
@@ -245,7 +251,6 @@
 </div>
 </body>
 <style>
-
     .header {
         padding-top: 2rem;
         display: flex;
@@ -344,12 +349,10 @@
         left: 50%;
     }
 
-    body {
+    * {
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        /* background-color: #faedcd; */
-        /* background-image: url(/auracalc/src/lib/assets/tape\ texture.png); */
     }
     .description {
         max-width: 30rem;
@@ -394,5 +397,28 @@
     }
     .results {
         backdrop-filter: blur(100px);
+    }
+    #tape {
+        position: absolute;
+        z-index: -1;
+        opacity: 23%;
+        height: 310%;
+        width: 97%;
+        object-fit: cover;
+        filter: blur(6px);
+        margin-left: .5rem
+    }
+    #github {
+        align-items: center;
+        text-decoration: none;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        font-weight: 700;
+        color: #1d3557;
+        font-size: 1.5rem;
+    }
+    #github:hover {
+        text-decoration: underline;
     }
 </style>
