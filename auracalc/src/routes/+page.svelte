@@ -2,7 +2,7 @@
     import alpha from '$lib/assets/alpha wolf.jpeg';
     import beta from '$lib/assets/beta wolf.gif';
     import tape from '$lib/assets/tape texture.png';
-    const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -200, 50, -150, 300, 2000, 200, -300, 325, 5000, 1, -2000, 800];
+    const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -200, 50, -150, 300, 2000, 200, -300, 325, 5000, 1, -2000, 800, -100, -50, -125, 50, 500, 2000, -30, -500, 350, 100, 1500, 225, -1250];
     let out = 'Cowabunga';
     let total = 0;
     let dialog;
@@ -167,7 +167,45 @@
          <input type="checkbox" id="q36" on:change={() => checks[36] = !checks[36]} checked={checks[36]}>
          <label for="q36">37. Clutch up in any game?</label>
          <br>
-
+         <input type="checkbox" id="q37" on:change={() => checks[37] = !checks[37]} checked={checks[37]}>
+         <label for="q37">38. Get caught staring at someone?</label>
+         <br>
+         <input type="checkbox" id="q38" on:change={() => checks[38] = !checks[38]} checked={checks[38]}>
+         <label for="q38">39. Card declined?</label>
+         <br>
+         <input type="checkbox" id="q39" on:change={() => checks[39] = !checks[39]} checked={checks[39]}>
+         <label for="q39">40. Coughed after taking a hit?</label>
+         <br>
+         <input type="checkbox" id="q40" on:change={() => checks[40] = !checks[40]} checked={checks[40]}>
+         <label for="q40">41. Cooked a homemade meal in the past week?</label>
+         <br>
+         <input type="checkbox" id="q41" on:change={() => checks[41] = !checks[41]} checked={checks[41]}>
+         <label for="q41">42. Got rizzed up?</label>
+         <br>
+         <input type="checkbox" id="q42" on:change={() => checks[42] = !checks[42]} checked={checks[42]}>
+         <label for="q42">43. Have a record for anything?</label>
+         <br>
+         <input type="checkbox" id="q43" on:change={() => checks[43] = !checks[43]} checked={checks[43]}>
+         <label for="q43">44. Are you a <i>certified</i> hater?</label>
+         <br>
+         <input type="checkbox" id="q44" on:change={() => checks[44] = !checks[44]} checked={checks[44]}>
+         <label for="q44">45. Lost something and spent more than an hour looking for it?</label>
+         <br>
+         <input type="checkbox" id="q45" on:change={() => checks[45] = !checks[45]} checked={checks[45]}>
+         <label for="q45">46. Listen to Jazz?</label>
+         <br>
+         <input type="checkbox" id="q46" on:change={() => checks[46] = !checks[46]} checked={checks[46]}>
+         <label for="q46">47. You think Dave's Hot Chicken is better than Canes?</label>
+         <br>
+         <input type="checkbox" id="q47" on:change={() => checks[47] = !checks[47]} checked={checks[47]}>
+         <label for="q47">48. Kendrick is better than Drake(in every way)?</label>
+         <br>
+         <input type="checkbox" id="q48" on:change={() => checks[48] = !checks[48]} checked={checks[48]}>
+         <label for="q48">49. Do you even lift bro?</label>
+         <br>
+         <input type="checkbox" id="q49" on:change={() => checks[49] = !checks[49]} checked={checks[49]}>
+         <label for="q49">50. Watched a horror movie and got scared?</label>
+         <br>
         <br>
         <div class="buttons">
             <button type="button" id="submit" on:click={() => {
