@@ -1,7 +1,7 @@
 <script>
     import alpha from '$lib/assets/alpha wolf.jpeg';
     import beta from '$lib/assets/beta wolf.gif';
-    import infinite from '$lib/assets/infinite.png';
+    import tape from '$lib/assets/tape texture.png';
     const values = [-50, 100, 150, -50, -25, -100, -150, -250, 500, 50, 200, -300, 50, 250, 75, 100, -300, -50, 100, -125, -200, 150, 75, 50, -1000, -200, 50, -150, 300, 2000, 200, -300, 325, 5000, 1, -2000, 800];
     let out = 'Cowabunga';
     let total = 0;
@@ -49,9 +49,6 @@
     
 </script>
 <body>
-<div class="background">
-    
-</div>
 <div class = "header">
     <h1>Form AC-7:<br>Aura Calculator</h1>
     <h3 id = "gov">&#9888 Government Sanctioned Aura Testing &#9888</h3>
@@ -210,6 +207,7 @@
 </div>
 </body>
 <style>
+
     .header {
         padding-top: 2rem;
         display: flex;
@@ -257,7 +255,7 @@
         margin-top: 2rem;
     }
     #reset:hover {
-        color: black;
+        color: #e63946;
         background-color: #faedcd;
         border-color: #d4a373;
     }
@@ -306,7 +304,8 @@
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
-        background-color: #faedcd;
+        /* background-color: #faedcd; */
+        /* background-image: url(/auracalc/src/lib/assets/tape\ texture.png); */
     }
     .description {
         max-width: 30rem;
