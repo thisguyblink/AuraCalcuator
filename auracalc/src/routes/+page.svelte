@@ -48,10 +48,91 @@
     
 </script>
 <body>
+<div class="backgoundtext"> 
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+    <h1 class = "back-text">GMM</h1>
+</div>
 <div class = "header">
-    <h1>Aura Calculator</h1>
-    <h3>Government Sanctioned Aura Testing</h3>
-    <h3>Sigma and Beta Testing Included</h3>
+    <h1>Form AC-7:<br>Aura Calculator</h1>
+    <h3 id = "gov">&#9888 Government Sanctioned Aura Testing &#9888</h3>
+    <p class="description">This is a test designed to calculate your Aura based on your actions. If there isn't a time frame listed use best judgment.<br> Don't lie, we will know. We are watching. <br>Happy Testing, <br> G Money Moves Inc. </p>
 </div>
 <div class ="questionList">
     <form class="questionForm" method="POST" action="?/submission">
@@ -180,6 +261,7 @@
         </div>
     </form>
     <p id="output">Your score is {total}</p>
+    <p id="complaints">If you don't like your score, you can email betacompliants@gmoneymoves.com or DM @gmoneymoves</p>
     <div class = "results">
         <dialog id="dresult" bind:this={dialog}>
             <button type="button" id="exit" on:click={() => {
@@ -205,42 +287,86 @@
 </div>
 </body>
 <style>
-    .questionForm {
-        background-color: #CCCCDD;
+    .backgoundtext {
+        position: absolute;
+        z-index: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        opacity: 2%;
+        font-weight: 900;
+        font-size: 2rem;
+        text-shadow: 1px 1px black, -1px -1px #444;  
+        max-height: 1rem;  
+    }
+    .back-text {
+        /* margin: 2rem; */
+        padding: .5rem;
     }
     .header {
-        padding-top: 3rem;
+        z-index: 2;
+        padding-top: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         font-weight: 900;
         font-size: 1.25rem;
+        text-align: center;
     }
     .questionList {
+        z-index: 5;
         padding-top: 3rem;
         padding-left: 3rem;
         display: flex;
         justify-content: center;
-        margin-left: 20px;
+        left: 10%;
         flex-direction: column;
         font-size: 1.25rem;
-        font-weight: 300;
+        font-weight: 400;
     }
     #submit {
-        background-color: rgb(172, 98, 233);
-        border-color: azure;
+        background-color: #264653;
         color: white;
-        font-size: medium;
+        border-color: #faedcd;
+        font-size: 3.5rem;
+        border-radius: 1rem;
+        width: 17rem;
+        height: 6rem;
+        border-width: .5rem;
+    }
+    #submit:hover {
+        color: black;
+        background-color: #faedcd;
+        border-color: #d4a373;
+        border-width: .5rem;
+    }
+    #reset {
+        background-color: #e63946;
+        color: white;
+        border-color: #faedcd;
+        font-size: 2rem;
+        border-radius: 1rem;
+        width: 10rem;
+        height: 3rem;
+        margin-top: 2rem;
+    }
+    #reset:hover {
+        color: black;
+        background-color: #faedcd;
+        border-color: #d4a373;
     }
     #output {
-        border: 3px solid purple;
-        height: 5rem;
-        width: 10rem;
-        background-color: beige;
+        height: auto;
+        width: auto;
+        padding: 2rem;
+        background-color: #a8dadc;
+        color: #1d3557;
+        border: 3px solid #1d3557;
         align-self: center;
         text-align: center;
         font-size: 2rem;
+        border-radius:  2rem;
     }
     #alpha {
         height: 30rem;
@@ -275,6 +401,30 @@
         font-family: "Public Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
+        background-color: #faedcd;
     }
-
+    .description {
+        max-width: 30rem;
+        width: auto;
+        flex-wrap: wrap;
+        font-weight: 400;
+        font-size: 1rem;
+    }
+    #complaints {
+        display: flex;
+        max-width: 30rem;
+        width: auto;
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+        flex-direction: column;
+        font-size: 1.25rem;
+        text-align: center;
+        align-self: center;
+        justify-content: center;
+    }
+    #gov {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 </style>
